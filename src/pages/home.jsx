@@ -5,7 +5,21 @@ const Home = () => {
     <>
       <Navigation />
       <div className="flex flex-col items-center justify-center px-6 py-10 rounded fade-in">
-        <ReactTwitchEmbedVideo channel="shironamie" />
+        <ReactTwitchEmbedVideo channel="Stun3R_" />
+      </div>
+      <div class="area">
+          <ul class="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+          </ul>
       </div>
     </>
   );

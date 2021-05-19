@@ -50,7 +50,7 @@ const Dropdown = ({ color }) => {
             >
               <a
                 className={
-                  "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap dark:bg-purple-700 dark:hover:bg-purple-600 hover:bg-purple-800" +
+                  "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap dark:bg-purple-700 dark:hover:bg-purple-600 hover:bg-purple-400" +
                   (color === "white" ? " text-blueGray-700" : "text-white")
                 }
                 onClick={(e) => e.preventDefault()}
@@ -59,7 +59,7 @@ const Dropdown = ({ color }) => {
               </a>
               <a
                 className={
-                  "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap dark:bg-purple-700 dark:hover:bg-purple-600 hover:bg-purple-800" +
+                  "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap dark:bg-purple-700 dark:hover:bg-purple-600 hover:bg-purple-400" +
                   (color === "white" ? " text-blueGray-700" : "text-white")
                 }
                 onClick={(e) => e.preventDefault()}
@@ -68,12 +68,21 @@ const Dropdown = ({ color }) => {
               </a>
               <a
                 className={
-                  "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap dark:bg-purple-700 dark:hover:bg-purple-600 hover:bg-purple-800" +
+                  "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap dark:bg-purple-700 dark:hover:bg-purple-600 hover:bg-purple-400" +
                   (color === "white" ? " text-blueGray-700" : "text-white")
                 }
                 onClick={(e) => e.preventDefault()}
               >
-                <Link to="/">Shiromanie</Link>
+                <Link to="/shironamie">Shiromanie</Link>
+              </a>
+              <a
+                className={
+                  "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap dark:bg-purple-700 dark:hover:bg-purple-600 hover:bg-purple-400" +
+                  (color === "white" ? " text-blueGray-700" : "text-white")
+                }
+                onClick={(e) => e.preventDefault()}
+              >
+                <Link to="/">Stun3R</Link>
               </a>
             </div>
           </div>
