@@ -19,7 +19,7 @@ const Navigation = () => {
                 </li>
             </ul>
             <ul className="items-start justify-start p-2 pl-8 pr-8 transition duration-150 bg-purple-500 rounded-md pointer dark:bg-purple-700 dark:hover:bg-purple-600 hover:bg-purple-600 text-gray-50 whitespace-nowrap">
-                <Dropdown color="red" />
+                <Dropdown color="purple" />
             </ul>
         </nav>
     )
