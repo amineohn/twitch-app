@@ -8,7 +8,7 @@ const Dropdown = ({ color }) => {
   const popoverDropdownRef = React.createRef();
   const openDropdownPopover = () => {
     createPopper(btnDropdownRef.current, popoverDropdownRef.current, {
-      placement: "bottom-start"
+      placement: "bottom-start",
     });
     setDropdownPopoverShow(true);
   };
@@ -25,12 +25,20 @@ const Dropdown = ({ color }) => {
       <div className="flex flex-wrap cursor-pointer">
         <div className="w-full px-4 sm:w-6/12 md:w-4/12">
           <div className="relative inline-flex w-full align-middle">
-          <a ref={btnDropdownRef}
+            <a
+              ref={btnDropdownRef}
               onClick={() => {
                 dropdownPopoverShow
                   ? closeDropdownPopover()
                   : openDropdownPopover();
-              }} className="font-mono text-xl pointer"><twitch className="inline-flex pointer"><Twitch />&nbsp;My List</twitch></a>
+              }}
+              className="font-mono text-xl pointer"
+            >
+              <twitch className="inline-flex pointer">
+                <Twitch />
+                &nbsp;My List
+              </twitch>
+            </a>
             <div
               ref={popoverDropdownRef}
               className={
@@ -45,8 +53,8 @@ const Dropdown = ({ color }) => {
                   "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap dark:bg-purple-700 dark:hover:bg-purple-600 hover:bg-purple-800" +
                   (color === "white" ? " text-blueGray-700" : "text-white")
                 }
-                onClick={e => e.preventDefault()}
-                >
+                onClick={(e) => e.preventDefault()}
+              >
                 <Link to="/prince">Prince</Link>
               </a>
               <a
@@ -54,8 +62,8 @@ const Dropdown = ({ color }) => {
                   "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap dark:bg-purple-700 dark:hover:bg-purple-600 hover:bg-purple-800" +
                   (color === "white" ? " text-blueGray-700" : "text-white")
                 }
-                onClick={e => e.preventDefault()}
-                >
+                onClick={(e) => e.preventDefault()}
+              >
                 <Link to="/anas">Anas</Link>
               </a>
               <a
@@ -63,8 +71,8 @@ const Dropdown = ({ color }) => {
                   "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap dark:bg-purple-700 dark:hover:bg-purple-600 hover:bg-purple-800" +
                   (color === "white" ? " text-blueGray-700" : "text-white")
                 }
-                onClick={e => e.preventDefault()}
-                >
+                onClick={(e) => e.preventDefault()}
+              >
                 <Link to="/">Shiromanie</Link>
               </a>
             </div>
