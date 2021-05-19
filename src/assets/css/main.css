@@ -24,3 +24,10 @@ img, video {
   padding-right: 3rem !important;
   padding-bottom: 0.2rem !important;
 }
+.pr-8-s {
+  padding-right: 3rem !important;
+  padding-bottom: 0.9rem !important;
+}
+option {
+  @apply font-normal rounded-md;
+}
