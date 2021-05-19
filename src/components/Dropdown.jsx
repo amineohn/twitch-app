@@ -36,13 +36,13 @@ const Dropdown = ({ color }) => {
               className={
                 (dropdownPopoverShow ? "block " : "hidden ") +
                 (color === "white" ? "bg-white " : bgColor + " ") +
-                "text-base z-10 float-left py-2 list-none text-left rounded bg-red-500 dark:bg-red-700 shadow-lg mt-1 transition duration-150"
+                "text-base z-10 float-left py-2 list-none text-left rounded bg-purple-500 dark:bg-purple-700 shadow-lg mt-1 transition duration-150"
               }
               style={{ minWidth: "11rem", marginTop: 9, marginLeft: -10 }}
             >
               <a
                 className={
-                  "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap dark:bg-red-700 dark:hover:bg-red-600 hover:bg-red-800" +
+                  "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap dark:bg-purple-700 dark:hover:bg-purple-600 hover:bg-purple-800" +
                   (color === "white" ? " text-blueGray-700" : "text-white")
                 }
                 onClick={e => e.preventDefault()}
@@ -51,7 +51,7 @@ const Dropdown = ({ color }) => {
               </a>
               <a
                 className={
-                  "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap dark:bg-red-700 dark:hover:bg-red-600 hover:bg-red-800" +
+                  "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap dark:bg-purple-700 dark:hover:bg-purple-600 hover:bg-purple-800" +
                   (color === "white" ? " text-blueGray-700" : "text-white")
                 }
                 onClick={e => e.preventDefault()}
@@ -60,7 +60,7 @@ const Dropdown = ({ color }) => {
               </a>
               <a
                 className={
-                  "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap dark:bg-red-700 dark:hover:bg-red-600 hover:bg-red-800" +
+                  "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap dark:bg-purple-700 dark:hover:bg-purple-600 hover:bg-purple-800" +
                   (color === "white" ? " text-blueGray-700" : "text-white")
                 }
                 onClick={e => e.preventDefault()}
