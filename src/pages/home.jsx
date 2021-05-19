@@ -1,5 +1,6 @@
 import Navigation from "../components/Navigation";
 import ReactTwitchEmbedVideo from "react-twitch-embed-video";
+import Circles from "../components/Circles";
 const Home = () => {
   return (
     <>
@@ -7,20 +8,7 @@ const Home = () => {
       <div className="flex flex-col items-center justify-center px-6 py-10 rounded fade-in">
         <ReactTwitchEmbedVideo channel="Stun3R_" />
       </div>
-      <div class="area">
-          <ul class="circles">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-          </ul>
-      </div>
+      <Circles />
     </>
   );
 };

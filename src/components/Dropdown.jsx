@@ -1,6 +1,7 @@
 import React from "react";
 import { createPopper } from "@popperjs/core";
 import Twitch from "./icons/Twitch";
+import Heart from "./icons/Heart";
 import { Link } from "react-router-dom";
 const Dropdown = ({ color }) => {
   const [dropdownPopoverShow, setDropdownPopoverShow] = React.useState(false);
@@ -44,45 +45,45 @@ const Dropdown = ({ color }) => {
               className={
                 (dropdownPopoverShow ? "block " : "hidden ") +
                 (color === "white" ? "bg-white " : bgColor + " ") +
-                "text-base z-10 float-left py-2 list-none text-left rounded bg-purple-500 dark:bg-purple-700 shadow-lg mt-1 transition duration-150"
+                "text-base z-10 float-left py-3 rounded-t-none list-none text-left rounded bg-purple-500 dark:bg-purple-700 shadow-lg mt-4 transition duration-150 -ml-12"
               }
-              style={{ minWidth: "11rem", marginTop: 9, marginLeft: -10 }}
+              style={{ minWidth: "14.9rem" }}
             >
               <a
                 className={
-                  "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap dark:bg-purple-700 dark:hover:bg-purple-600 hover:bg-purple-400" +
+                  "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap transition duration-150 dark:bg-purple-700 dark:hover:bg-purple-600 hover:bg-purple-400" +
                   (color === "white" ? " text-blueGray-700" : "text-white")
                 }
                 onClick={(e) => e.preventDefault()}
               >
-                <Link to="/prince">Prince</Link>
+                <Link to="/prince" className="inline-flex"><Heart />&nbsp;Prince</Link>
               </a>
               <a
                 className={
-                  "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap dark:bg-purple-700 dark:hover:bg-purple-600 hover:bg-purple-400" +
+                  "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap transition duration-150 dark:bg-purple-700 dark:hover:bg-purple-600 hover:bg-purple-400" +
                   (color === "white" ? " text-blueGray-700" : "text-white")
                 }
                 onClick={(e) => e.preventDefault()}
               >
-                <Link to="/anas">Anas</Link>
+                <Link to="/anas" className="inline-flex"><Heart />&nbsp;Anas</Link>
               </a>
               <a
                 className={
-                  "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap dark:bg-purple-700 dark:hover:bg-purple-600 hover:bg-purple-400" +
+                  "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap transition duration-150 dark:bg-purple-700 dark:hover:bg-purple-600 hover:bg-purple-400" +
                   (color === "white" ? " text-blueGray-700" : "text-white")
                 }
                 onClick={(e) => e.preventDefault()}
               >
-                <Link to="/shironamie">Shiromanie</Link>
+                <Link to="/shironamie" className="inline-flex"><Heart />&nbsp;Shiromanie</Link>
               </a>
               <a
                 className={
-                  "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap dark:bg-purple-700 dark:hover:bg-purple-600 hover:bg-purple-400" +
+                  "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap transition duration-150 dark:bg-purple-700 dark:hover:bg-purple-600 hover:bg-purple-400" +
                   (color === "white" ? " text-blueGray-700" : "text-white")
                 }
                 onClick={(e) => e.preventDefault()}
               >
-                <Link to="/">Stun3R</Link>
+                <Link to="/" className="inline-flex"><Heart />&nbsp;Stun3R</Link>
               </a>
             </div>
           </div>
