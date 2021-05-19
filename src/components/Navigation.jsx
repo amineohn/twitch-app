@@ -20,7 +20,7 @@ const Navigation = () => {
             </ul>
             <ul className="items-center justify-center p-2 pl-8 pr-8 transition duration-150 bg-purple-400 rounded-md dark:bg-purple-700 dark:hover:bg-purple-600 hover:bg-purple-500 text-gray-50 whitespace-nowrap">
                 <li>
-                    <Link to="/" className="font-mono text-xl"><twitch className="inline-flex"><Twitch />&nbsp;Twitch</twitch></Link>
+                    <a href="https://www.twitch.tv/shironamie" target="_blank" className="font-mono text-xl pointer"><twitch className="inline-flex"><Twitch />&nbsp;Twitch</twitch></a>
                 </li>
             </ul>
             <ul className="items-center justify-center p-2 pl-8 pr-8"></ul>
