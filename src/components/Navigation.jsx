@@ -6,8 +6,8 @@ import useDarkMode from "../hooks/useDarkMode";
 const Navigation = () => {
     const [colorTheme, setTheme] = useDarkMode();
     return (
-        <nav className="flex items-center justify-center pt-20 space-x-20">
-            <ul className="items-center justify-center p-2.5 -ml-96 bg-indigo-400 hover:bg-indigo-500 transition duration-150 rounded-md text-gray-50 whitespace-nowrap" onClick={() => setTheme(colorTheme)}>
+        <nav className="flex items-start justify-center pt-20 space-x-20">
+            <ul className="items-start ml-20 justify-center p-2.5 bg-indigo-400 hover:bg-indigo-500 transition duration-150 rounded-md text-gray-50 whitespace-nowrap" onClick={() => setTheme(colorTheme)}>
                 <li>
                     <Link to="/">
                     {colorTheme === "light" ? (
