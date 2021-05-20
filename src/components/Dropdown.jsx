@@ -16,7 +16,13 @@ const Dropdown = ({ color }) => {
   const closeDropdownPopover = () => {
     setDropdownPopoverShow(false);
   };
-  // bg colors
+  const navigation = [
+    { name: 'Prince', href: '/prince' },
+    { name: 'Anas', href: '/anas' },
+    { name: 'Mushway', href: '/mush' },
+    { name: 'Shironamie', href: '/shironamie' },
+    { name: 'Stun3R', href: '/' },
+  ]
   let bgColor;
   color === "white"
     ? (bgColor = "bg-blueGray-700")
@@ -45,10 +51,11 @@ const Dropdown = ({ color }) => {
               className={
                 (dropdownPopoverShow ? "block " : "hidden ") +
                 (color === "white" ? "bg-white " : bgColor + " ") +
-                "text-base z-10 float-left py-3 rounded-t-none list-none text-left rounded bg-purple-500 dark:bg-purple-700 shadow-lg mt-4 transition duration-150 -ml-12"
+                "text-base z-10 float-left py-3 rounded-t-none list-none text-left rounded bg-purple-500 dark:bg-purple-700 shadow-lg mt-4 transition-all duration-150 ease-in-out -ml-12"
               }
               style={{ minWidth: "14.9rem" }}
             >
+              {navigation.map((item) => (
               <a
                 className={
                   "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap transition duration-150 dark:bg-purple-700 dark:hover:bg-purple-600 hover:bg-purple-400" +
@@ -56,35 +63,9 @@ const Dropdown = ({ color }) => {
                 }
                 onClick={(e) => e.preventDefault()}
               >
-                <Link to="/prince" className="inline-flex"><Heart />&nbsp;Prince</Link>
+                <Link key={item.name} to={item.href} className="inline-flex"><Heart />&nbsp;{item.name}</Link>
               </a>
-              <a
-                className={
-                  "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap transition duration-150 dark:bg-purple-700 dark:hover:bg-purple-600 hover:bg-purple-400" +
-                  (color === "white" ? " text-blueGray-700" : "text-white")
-                }
-                onClick={(e) => e.preventDefault()}
-              >
-                <Link to="/anas" className="inline-flex"><Heart />&nbsp;Anas</Link>
-              </a>
-              <a
-                className={
-                  "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap transition duration-150 dark:bg-purple-700 dark:hover:bg-purple-600 hover:bg-purple-400" +
-                  (color === "white" ? " text-blueGray-700" : "text-white")
-                }
-                onClick={(e) => e.preventDefault()}
-              >
-                <Link to="/shironamie" className="inline-flex"><Heart />&nbsp;Shiromanie</Link>
-              </a>
-              <a
-                className={
-                  "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap transition duration-150 dark:bg-purple-700 dark:hover:bg-purple-600 hover:bg-purple-400" +
-                  (color === "white" ? " text-blueGray-700" : "text-white")
-                }
-                onClick={(e) => e.preventDefault()}
-              >
-                <Link to="/" className="inline-flex"><Heart />&nbsp;Stun3R</Link>
-              </a>
+              ))}
             </div>
           </div>
         </div>
